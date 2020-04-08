@@ -9,5 +9,7 @@ This case is to solve the dynamics of the Point Mass and Elastica System without
 The main file is: Simulation_MassElastica
 
 Notes:
+
 -The coordinate system of the elastica problem is adjusted to represent the problem
+
 -Pre-bending is added to avoid numerical issues.
