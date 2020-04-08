@@ -9,6 +9,7 @@ dzdt=[z(3);z(4);p;q-w];
 function [p,q]=ElasticaDeformation(x,y)
 
 L=1;
+%coordinate change
 x1=y;
 y1=x;
 
@@ -35,7 +36,7 @@ end
 
 function dzdt=odefun(t,z,upar)
 
-
+%coordinate change
 dzdt=[z(2);-upar(2)*sin(z(1))+upar(1)*cos(z(1));cos(z(1));sin(z(1))];
 end
 
@@ -46,6 +47,7 @@ function res=bcfun(zleft,zright,upar,x1,y1)
 %Define boundary conditions x1,y1 are location of the mass; x0,y0 are
 %zeros; moments are zero at both ends
 %total 6 boundary conditions
+%pre-bending is added (0.02) to avoid numerical issues
 res=[zleft(2)+0.02 zleft(3) zleft(4) zright(2)+0.02 zright(3)-x1 zright(4)-y1];
 end
 end
