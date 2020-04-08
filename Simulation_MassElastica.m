@@ -1,9 +1,9 @@
 clc
 clear
 %parameter definition
-%initial angle
+%initial angle in degrees
 angle_in=30;
-angle=pi/2-deg2rad(angle_in);
+angle=deg2rad(angle_in);
 figure 
 hold on
 %initial velocity
