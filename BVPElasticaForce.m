@@ -1,7 +1,8 @@
 function [x_disp,y_disp]=BVPElasticaForce(angle,p,q)
 
 L=1;
-alpha=angle;
+%coordinate change
+alpha=pi/2-angle;
 
 par=[p;q];
 
