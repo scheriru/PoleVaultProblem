@@ -10,6 +10,6 @@ The main file is: Simulation_MassElastica
 
 Notes:
 
--To follow the convention of the general elastica problem, the coordinate system of the elastica problem is adjusted. 
+-To follow the convention of the general elastica problem, the coordinate system of the elastica problem is adjusted. Please see more details in the code.
 
 -Pre-bending is added to avoid numerical issues.
