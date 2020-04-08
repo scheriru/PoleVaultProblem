@@ -8,13 +8,14 @@ par=[p;q];
 solinit=bvpinit(linspace(0,L,100),@(x)yfun_Force(x,L));
 sol=bvp4c(@(t,z)odefun_Force(t,z,par),@(zleft,zright)bcfun_Force(zleft,zright,alpha),solinit);
 
+%coordinate change
 y_disp=sol.y(3,end);
 x_disp=sol.y(4,end);
 
 %plot(sol.y(4,:),sol.y(3,:))
 
 function dzdt=odefun_Force(t,z,par)
-
+%coordinate change
 dzdt=[z(2);-par(2)*sin(z(1))+par(1)*cos(z(1));cos(z(1));sin(z(1))];
 end
 
