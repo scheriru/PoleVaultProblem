@@ -8,6 +8,8 @@ This case is to solve the dynamics of the Point Mass and Elastica System without
 
 The main file is: Simulation_MassElastica
 
+To study the energy changing for the duration, use Simulation_MassElastica_Energy
+
 Notes:
 
 -To follow the convention of the general elastica problem, the coordinate system of the elastica problem is adjusted. Please see more details in the code.
